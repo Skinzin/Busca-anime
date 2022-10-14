@@ -1,0 +1,111 @@
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+form > div {
+    background-color: var(--grey-color-100);
+    padding: 12px;
+    border-radius: .6rem;
+
+    width: 352px;
+}
+
+.title {
+    text-align: center;
+}
+
+#btnLogar, #btnCadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;    
+
+    padding: .2rem .6rem;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 18px;
+
+    color: #fff;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+#btnLogar {
+    background-color: var(--color-roxo-300);
+}
+
+#btnCadastrar {
+    color: var(--color-roxo-300);
+    margin-top: 12px;
+}
+
+#btnCadastrar:hover {
+    background-color: #12121431;
+    color: #79797eb0;
+}
+
+
+
+/* Label */
+
+
+.labelFloat {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 12px;
+    
+    position: relative;
+}
+
+.labelFloat label {
+    transition: .3s;
+    position: absolute;
+
+    top: 30%;
+    left: 15px;
+    color: #fff;
+
+    padding: 0 6px;
+}
+
+
+/* Input */
+
+.labelFloat input {
+    width: 100%;
+    min-height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    font-size: 16px;
+
+    background-color: var(--grey-color);
+
+    color: #fff;
+
+    padding: .5rem .7rem;
+    margin-top: .4rem;
+}
+
+.labelFloat input:focus + label,
+.labelFloat input:not(:placeholder-shown) + label {
+    background-color: var(--grey-color);
+    border-radius: 6px;
+
+    top: -5px;
+    left: 8px;
+}

@@ -1,0 +1,8 @@
+.container > div {
+    display: flex;
+    justify-content: center;
+}
+
+.userInfosContainer {
+    background-color: var(--grey-color-100);
+}

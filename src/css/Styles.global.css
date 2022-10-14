@@ -69,3 +69,14 @@ header {
     cursor: pointer;
     text-decoration: none;
 }
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--grey-color);
+    border-radius: 4px;
+}

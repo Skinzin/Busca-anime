@@ -22,7 +22,7 @@ form {
     margin-top: .4rem;
 }
 
-#search {
+#btnSearch {
     display: flex;
 
     background: transparent;

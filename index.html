@@ -38,8 +38,8 @@
         <div>
             <span class="title">Olá! Vamos começar a procurar algum anime =)</span>
 
-            <form>
-                <button id="search">
+            <form id="search">
+                <button id="btnSearch">
                     <span class="material-symbols-outlined">search</span>
                 </button>
                 
@@ -50,5 +50,14 @@
     
     
     <script src="./src/js/header.js"></script>
+    <!-- <script type="module" src="./src/js/insertInfoAnime.js"></script> -->
+
+    <script>
+        document.getElementById("search").addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            window.location.href = `./src/pages/anime.html?anime=${e.target.anime.value}`
+        })
+    </script>
 </body>
 </html>

@@ -39,13 +39,13 @@
     <div class="container">
         <div class="bannerContainer">
             <div class="bannerBackground">
-                <img src="https://media.kitsu.io/anime/45398/cover_image/7584152e78b582a70fc68013d91aad67.jpg" alt="Banner de Spy x Family | By: Kitsu.io">
+                <img id="coverImage" src="https://media.kitsu.io/anime/45398/cover_image/7584152e78b582a70fc68013d91aad67.jpg" alt="Banner de Spy x Family | By: Kitsu.io">
             </div>
 
             
             <div class="sidebar">
                 <div class="images">
-                    <img class="capa" src="https://media.kitsu.io/anime/45398/poster_image/large-c26c1e0b77e881fcd66475af6bd22c57.jpeg" alt="Capa de Spy x Family | By: Kitsu.io">
+                    <img id="capa" src="https://media.kitsu.io/anime/45398/poster_image/large-c26c1e0b77e881fcd66475af6bd22c57.jpeg" alt="Capa de Spy x Family | By: Kitsu.io">
 
                     <a href="#" id="btnFavorite">
                         <span class="material-symbols-outlined">favorite</span>
@@ -71,7 +71,7 @@
                     <div class="details">
                         <span class="title">Mais detalhes</span>
     
-                        <div>
+                        <div id="situation">
                             <div>
                                 <span class="subTitle">Status:</span>
                                 <span id="status" class="ok">Concluído.</span>
@@ -104,9 +104,7 @@
                 <div class="watch">
                     <span class="title">Onde assistir</span>
 
-                    <a href="#">Crunchyroll</a>
-                    <a href="#">123abc</a>
-                    <a href="#">....</a>
+                    <a href="https://www.crunchyroll.com/pt-br/spy-x-family">Crunchyroll</a>
                 </div>
 
                 <!-- <div class="details">
@@ -144,6 +142,7 @@
     </div>
     
     
-    <script src="./src/js/header.js"></script>
+    <script src="../js/header.js"></script>
+    <script type="module" src="../js/insertInfoAnime.js"></script>
 </body>
 </html>

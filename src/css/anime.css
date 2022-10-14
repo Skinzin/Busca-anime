@@ -38,7 +38,7 @@
     transition: .3s;
 }
 
-.capa {
+#capa {
     width: 195px;
 }
 
@@ -100,7 +100,6 @@
     border-radius: 6px;
 
     padding: 12px;
-    height: 100%;
 }
 
 .details > div {

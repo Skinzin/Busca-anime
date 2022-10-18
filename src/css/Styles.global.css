@@ -15,6 +15,10 @@
     --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 
     --color-roxo-300: #9F75FF;
+
+    --color-green-300: #75ffca;
+
+    --color-yellow-300: #ffcf75;
 }
 
 body {

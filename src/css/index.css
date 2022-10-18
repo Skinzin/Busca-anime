@@ -19,6 +19,7 @@ form {
     border-radius: 7px;
 
     padding: .5rem .7rem;
+    margin: 0 .3rem;
     margin-top: .4rem;
 }
 
@@ -31,6 +32,16 @@ form {
     color: var(--grey-color);
 
     cursor: pointer;
+}
+
+p {
+    margin-top: 22px;
+    font-size: 14px;
+    color: var(--grey-color);
+}
+p a{
+    color: var(--color-roxo-300);
+    text-decoration: none;
 }
 
 .container input {

@@ -1,8 +1,23 @@
+.bannerBackground {
+    position: relative;
+}
+
 .bannerBackground img {
     width: 100%;
     opacity: .6;
 
     position: relative;
+}
+
+.bannerBackground::before {
+    content: "";
+    background: linear-gradient(to top, var(--color-background), transparent);
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    bottom: 4px;
+    z-index: 1;
 }
 
 .informationsContainer {
@@ -20,6 +35,8 @@
 
     width: 195px;
     float: left;
+
+    z-index: 2;
 }
 
 
@@ -39,6 +56,7 @@
 }
 
 #capa {
+    border-radius: 6px;
     width: 195px;
 }
 
@@ -80,6 +98,12 @@
     background-color: var(--grey-color-100);
 }
 
+
+#btnFavorite:hover .material-symbols-outlined {
+    font-variation-settings: "FILL" 1;
+    
+}
+
 /* Infos */
 
 #title {
@@ -93,6 +117,10 @@
     width: 100%;
 }
 
+#description {
+    text-align: justify;
+}
+
 /* ... */
 
 .details {
@@ -100,10 +128,54 @@
     border-radius: 6px;
 
     padding: 12px;
+    margin-top: 18px;
 }
 
 .details > div {
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    margin-top: 12px;
 }
+
+.details .title {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#situation {
+    display: flex;
+    flex-direction: row;
+}
+
+#situation div {
+    display: flex;
+    flex-direction: column;
+}
+
+#situation .subTitle {
+    font-weight: 600;
+}
+
+#situation div .subTitle ~ span {
+    font-size: 14px;
+    font-weight: 200;
+
+    opacity: .8;
+}
+
+.watch a {
+    color: var(--color-roxo-300);
+    text-decoration: none;
+}
+
+.ok {
+    color: var(--color-green-300) !important;
+}
+
+.progress {
+    color: var(--color-yellow-300) !important;
+}
+
+@media (max-width: 768px) {}
